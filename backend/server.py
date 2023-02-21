@@ -2,12 +2,12 @@ from flask import Flask
 import requests, os, random
 from datetime import datetime
 
-app = Flask(__name__, static_folder="frontend/.next", static_url_path="/")
+app = Flask(__name__, static_folder="frontend/.next/server/app", static_url_path="/")
 
 
 @app.route("/")
 def index():
-    return app.send_static_file("/server/app/index.html")
+    return app.send_static_file("index.html")
 
 
 @app.route("/api/search/<name>")
