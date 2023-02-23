@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  // experimental: {
+  //   appDir: true,
+  // },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -11,18 +12,18 @@ const nextConfig = {
       },
     ],
   },
-  async rewrites() {
-      return [
-        {
-          source: '/api/search/:path*',
-          destination: 'http://localhost:9874/api/search/:path*'
-        },
-        {
-          source: '/api/random',
-          destination: 'http://localhost:9874/api/random'
-        },
-      ]
-    },
+  // async rewrites() {
+  //     return [
+  //       {
+  //         source: '/api/search/:path*',
+  //         destination: 'http://localhost:9874/api/search/:path*'
+  //       },
+  //       {
+  //         source: '/api/random',
+  //         destination: 'http://localhost:9874/api/random'
+  //       },
+  //     ]
+  //   },
 
 
   }

@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter } from "@next/font/google";
-import Navbar from '@/app/Navbar';
+import Navbar from '@/components/Navbar';
 import { Footer } from './Footer';
 
 const inter = Inter({

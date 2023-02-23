@@ -1,8 +1,9 @@
 from flask import Flask
+from flask import send_from_directory, send_file, render_template
 import requests, os, random
 from datetime import datetime
 
-app = Flask(__name__, static_folder="frontend/.next/server/app", static_url_path="/")
+app = Flask(__name__, static_folder="../frontend/out/", static_url_path="/")
 
 
 @app.route("/")
