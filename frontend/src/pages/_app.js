@@ -1,7 +1,7 @@
-import './globals.css'
+import '../components/globals.css'
 import { Inter } from "@next/font/google";
 import Navbar from '@/components/Navbar';
-import { Footer } from './Footer';
+import { Footer } from '../components/Footer';
 
 const inter = Inter({
   weight: ['100', '200' ,'400','700','800', "900"],
@@ -9,7 +9,7 @@ const inter = Inter({
   variable: "--font-inter", 
 })
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ Component , pageProps }) {
   return (
     <html lang="en">
       <head>
@@ -20,7 +20,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.className} bg-gray-900 text-white`}>
         <Navbar />
-        {children}
+        <Component {...pageProps} />
+
         <Footer />
         </body>
     </html>

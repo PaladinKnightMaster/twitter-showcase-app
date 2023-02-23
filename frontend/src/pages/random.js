@@ -1,3 +1,3 @@
-import Random from "@/components/random/page";
+import Random from "../components/random/page";
 
 export default Random
