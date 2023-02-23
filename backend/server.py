@@ -11,6 +11,16 @@ def index():
     return app.send_static_file("index.html")
 
 
+@app.route("/search")
+def searchPage():
+    return app.send_static_file('search.html')
+
+@app.route("/random")
+def randomPage():
+    return app.send_static_file('random.html')    
+
+
+
 @app.route("/api/search/<name>")
 def getTweets(name):
     if name[0] == "@":
