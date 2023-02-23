@@ -9,7 +9,7 @@ export default function Home() {
             <h1 className="font-inter font-black mt-1 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-center text-4xl uppercase tracking-tighter text-transparent sm:text-5xl lg:text-7xl">Tweet Showcase</h1> 
             <h2 className="order-first bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-center bg-clip-text font-medium tracking-wide text-transparent">Search for recent tweets of an user or by keyword</h2>
         </div>
-        <div className="flex flex-col md:flex-row items-center md:justify-center gap-20 mt-16 ">
+        <div className="flex flex-col md:flex-row items-center md:justify-center gap-20 mt-16 mb-10 ">
             <Link href={'/search'}>
             <div className="card">
                 <div className="card__content flex flex-col items-center p-5">

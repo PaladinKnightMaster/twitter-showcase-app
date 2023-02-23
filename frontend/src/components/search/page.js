@@ -30,7 +30,7 @@ export default function Search() {
 
         <div className="grid grid-flow-row gap-y-px justify-center mb-20">  
          {(typeof data.results == 'undefined' || data.results.length == 0) ? (
-            <div className="font-light mt-9">
+            <div className="font-light mt-9 max-w-sm">
                 Please select a name, handle or keyword and press search
             </div>
          ) : ((loading == true) ? (
